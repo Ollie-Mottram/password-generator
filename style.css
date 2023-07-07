@@ -1,0 +1,274 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: inherit;
+}
+
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+  background-image: url(https://images.pond5.com/password-hacking-background-abstract-symbols-footage-122248051_prevstill.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50%;
+  width: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+/*layout*/
+
+main {
+  width: 100%;
+  height: 500rem;
+  border-radius: 9px;
+}
+
+.box {
+  position: absolute;
+  align-items: center;
+  width: 550px;
+  height: 530px;
+  top: -16.5rem;
+  left: -18rem;
+  background-color: #01172a;
+  border: 3px solid black;
+}
+
+.container {
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+
+}
+/* tabs */
+
+.tabcontent {
+  position: absolute;
+  align-items: center;
+  top: 16rem;
+  left: 18rem;
+}
+
+.tabs {
+  position: absolute;
+  text-align: center;
+}
+
+#tab1-btn,
+#tab2-btn,
+#tab3-btn {
+  height: 25px;
+  width: 178px;
+  background-color: #003f75;
+  color: white;
+}
+
+.tablink {
+  background-color: #f2f2f2;
+  border: none;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Show the active tab */
+.tabcontent.show {
+  display: block;
+}
+
+/* password generator */
+
+#pw-heading, #pin-heading, #mem-heading {
+  font-size: 2rem;
+  position: absolute;
+  display:block;
+  justify-content: center;
+  align-content: center;
+  color: white;
+
+  top: -14rem;
+  left: -5.5rem;
+}
+
+#pin-heading,#mem-heading {
+  width: 150px;
+}
+
+.btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1rem;
+  font-weight: 400;
+  height: 1.5rem;
+  width: 5rem;
+
+  background-color: rgba(255, 255, 255, 0.6);
+  color: white;
+}
+
+#password-text-box,
+#pin-text-box, #mem-text-box {
+  position: absolute;
+  align-items: center;
+  height: 1.5rem;
+  width: 30rem;
+  background-color: #e3f2ff;
+  border: 2px solid black;
+
+  top: -6rem;
+  left: -15.5rem;
+}
+
+#password-text-box::placeholder {
+  color: black;
+}
+
+#btn-gen, #btn-gen-pin, #btn-gen-mem {
+  height: 1.5rem;
+  width: 19.5rem;
+
+  top: -4rem;
+  left: -5.7rem;
+}
+
+#btn-copy, #btn-copy-pin, #btn-copy-mem {
+  height: 1.5rem;
+  width: 9.8rem;
+
+  top: -4rem;
+  left: 9.6rem;
+}
+
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 57px;
+  height: 30px;
+}
+
+.toggle-switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #606060;
+  border-radius: 34px;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #13df00;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+#length-input, #pin-length-input, #mem-length-input {
+  top: -1.8rem;
+  left: -15.5rem;
+}
+
+#mem-word-length-input {
+  top: 0rem;
+  left: -15.5rem;
+}
+
+#length-input, #pin-length-input, #mem-length-input {
+  position: absolute;
+  align-items: center;
+  height: 30px;
+  width: 57px;
+  align-content: center;
+}
+
+
+.centered-input {
+  text-align: center;
+}
+
+#caps-slider, #specials-slider, #nums-slider {
+  align-items: center;
+}
+
+#caps-slider {
+  top: 1rem;
+  left: -15.5rem;
+}
+
+#specials-slider {
+  top: 4rem;
+  left: -15.5rem;
+}
+
+#nums-slider {
+  top: 7rem;
+  left: -15.5rem;
+}
+
+p {
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: medium;
+  color: white;
+}
+
+#length-label, #caps-label, #specials-label, #nums-label, #caps-slider, #specials-slider, #nums-slider, #word-length-label {
+  position: absolute;
+}
+
+#length-label {
+  top: -1.5rem;
+  left: -10rem;
+}
+
+#caps-label, #word-length-label {
+  top: 1.5rem;
+  left: -10rem;
+}
+
+#specials-label {
+  top: 4.5rem;
+  left: -10rem;
+}
+
+#nums-label {
+  top: 7.5rem;
+  left: -10rem;
+}
+
+#description {
+  top: 10rem;
+  left: -15.5rem;
+  width: 480px;
+  border: 3px solid black;
+  padding: 1rem;
+  background-color: #213343;
+}
+
+/* pin generator */

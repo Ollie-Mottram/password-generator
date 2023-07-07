@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Password Generator</title>
+</head>
+
+<body>
+    <main class="container">
+        <div class="box">
+            <div class="tabs">
+                <button class="tablink" id="tab1-btn" onclick="openTab(event, 'tab1')">Random Password</button>
+                <button class="tablink" id="tab2-btn" onclick="openTab(event, 'tab2')">Memorable Password</button>
+                <button class="tablink" id="tab3-btn" onclick="openTab(event, 'tab3')">Pin Password</button>
+            </div>
+            <div id="tab1" class="tabcontent">
+                <section>
+                    <h2 class="heading" id="pw-heading">Random Password Generator</h2>
+                    <textarea type="text" class="centered-input" id="password-text-box" name="passwordTexBox"
+                        placeholder="Press generate to get new password..."></textarea>
+                    <button class="btn" id="btn-gen">Generate</button>/
+                    <button class="btn" id="btn-copy">Copy to Clipboard</button>/
+                </section>
+                <p id="length-label">Input password length</p>
+                <label class="toggle-switch" id="caps-slider">
+                    <input type="checkbox" id="caps">
+                    <span class="slider"></span>
+                </label>
+                <p id="caps-label">Capital Letters</p>
+                <label class="toggle-switch" id="specials-slider">
+                    <input type="checkbox" id="specials">
+                    <span class="slider"></span>
+                </label>
+                <p id="specials-label">Special Characters</p>
+                <label class="toggle-switch" id="nums-slider">
+                    <input type="checkbox" id="nums">
+                    <span class="slider"></span>
+                </label>
+                <p id="nums-label">Numbers</p>
+                <label class="length">
+                    <input type="number" id="length-input" name="lengthInput"></input>
+                </label>
+                <p id="description">Enter desired length and then select the elements that you'd like to include in
+                    your password.</p>
+            </div>
+
+            <div id="tab2" class="tabcontent">
+                <h2 class="heading" id="mem-heading">Memorable Password Generator</h2>
+                <button class="btn" id="btn-gen-mem">Generate</button>
+                <button class="btn" id="btn-copy-mem">Copy to Clipboard</button>
+                <label class="length">
+                    <input type="number" id="mem-length-input" name="memlengthInput"></input>
+                </label>
+                <textarea type="text" class="centered-input" id="mem-text-box" name="pinTexBox"
+                    placeholder="Press generate to get new pin..."></textarea>
+                <p id="length-label">Input number of words</p>
+                <p id="description">Enter your desired number of words and the length of the words that you'd like in your password.</p>
+            </div>
+
+            <div id="tab3" class="tabcontent">
+                <h2 class="heading" id="pin-heading">Pin Generator</h2>
+                <button class="btn" id="btn-gen-pin">Generate</button>
+                <button class="btn" id="btn-copy-pin">Copy to Clipboard</button>
+                <label class="length">
+                    <input type="number" id="pin-length-input" name="pinlengthInput"></input>
+                </label>
+                <textarea type="text" class="centered-input" id="pin-text-box" name="pinTexBox"
+                    placeholder="Press generate to get new pin..."></textarea>
+                <p id="length-label">Input pin length</p>
+                <p id="description">Enter desired pin length get your random pin.</p>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
